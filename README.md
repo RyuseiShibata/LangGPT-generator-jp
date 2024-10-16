@@ -1,73 +1,34 @@
 # Minstrel
+Minstrelは、LangGPTフォーマットに基づいた構造化されたプロンプトを生成するためのマルチエージェントシステムです。このプロジェクトは、複数のインテリジェントエージェントが協力して高品質なLangGPTプロンプトを生成し、生成されるテキストの正確性と多様性を向上させることを目的としています。
 
-Minstrel 是一个多智能体系统，用于生成基于LangGPT格式的结构化提示。该项目旨在通过多个智能代理协作生成高质量的LangGPT提示，以提高生成文本的准确性和多样性。
+# 機能
+複数エージェントが協力してLangGPTプロンプトを生成
+効率的なプロンプト生成アルゴリズム
+拡張とカスタマイズが容易
 
-## 功能特性
+# インストール
+以下の手順に従って、このプロジェクトをインストールして実行してください。
 
-- 多代理协作生成LangGPT提示
-- 高效的提示生成算法
-- 易于扩展和定制
-
-## 安装
-
-请按照以下步骤安装和运行该项目：
-
-1. 克隆项目仓库：
-    ```bash
-    git clone https://github.com/sci-m-wang/LangGPT-generator.git
-    cd LangGPT-generator
-    ```
-
-2. 创建并激活虚拟环境（可选但推荐）：
-    ```bash
-    conda create -n langgpt python=3.10 -y
-    conda activate langgpt
-    ```
-
-3. 安装依赖项：
-    ```bash
-    pip install openai==1.37.1
-    pip install streamlit==1.37.0
-    ```
-
-## 使用方法
-
-以下是一个简单的使用示例：
-
-1. 运行主脚本以生成LangGPT提示：
-    ```bash
-    python -m streamlit run app.py
-    ```
-
-## 贡献
-
-欢迎贡献代码！请遵循以下步骤：
-
-1. Fork 本仓库
-2. 创建一个新的分支 (`git checkout -b feature-branch`)
-3. 提交您的更改 (`git commit -am 'Add new feature'`)
-4. 推送到分支 (`git push origin feature-branch`)
-5. 创建一个新的 Pull Request
-
-## 引用
-如果您在研究中使用了本项目，请引用以下论文：
-```
-@misc{wang2024langgptrethinkingstructuredreusable,
-      title={LangGPT: Rethinking Structured Reusable Prompt Design Framework for LLMs from the Programming Language}, 
-      author={Ming Wang and Yuanzhong Liu and Xiaoyu Liang and Songlian Li and Yijie Huang and Xiaoming Zhang and Sijia Shen and Chaofeng Guan and Daling Wang and Shi Feng and Huaiwen Zhang and Yifei Zhang and Minghui Zheng and Chi Zhang},
-      year={2024},
-      eprint={2402.16929},
-      archivePrefix={arXiv},
-      primaryClass={cs.SE},
-      url={https://arxiv.org/abs/2402.16929}, 
-}
+1. プロジェクトリポジトリをクローン：
+```bash
+git clone https://github.com/RyuseiShibata/LangGPT-generator-jp.git
+cd LangGPT-generator-jp
 ```
 
-## 联系方式
+2. 仮想環境を作成して有効化（任意ですが推奨）：
+```bash
+conda create -n langgpt python=3.10 -y
+conda activate langgpt
+```
 
-如果您有任何问题或建议，请通过以下方式联系我们：
+3. 依存関係をインストール：
+```bash
+pip install openai==1.37.1
+pip install streamlit==1.37.0
+```
 
-- 电子邮件: sci.m.wang@gmail.com
-- GitHub: [sci-m-wang](https://github.com/sci-m-wang)
+4. 使用方法
+```bash
+python -m streamlit run app.py
+```
 
-感谢您使用 LangGPT-generator！
